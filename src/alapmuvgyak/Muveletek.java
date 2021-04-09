@@ -97,6 +97,11 @@ public class Muveletek extends javax.swing.JFrame {
         );
 
         btnUj.setText("Új feladat");
+        btnUj.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnUjActionPerformed(evt);
+            }
+        });
 
         btnMegoldas.setText("Megoldás");
         btnMegoldas.addActionListener(new java.awt.event.ActionListener() {
@@ -281,9 +286,29 @@ public class Muveletek extends javax.swing.JFrame {
     }//GEN-LAST:event_btnMegoldasActionPerformed
 
     private void mnuMuveletekOsztasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuMuveletekOsztasActionPerformed
-        // TODO add your handling code here:
+        
+        Osztas();
     }//GEN-LAST:event_mnuMuveletekOsztasActionPerformed
 
+    private void btnUjActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUjActionPerformed
+        
+    }//GEN-LAST:event_btnUjActionPerformed
+
+    
+    private void Osztas(){
+    
+        int szam1 = 21;
+        int szam2 = 7;
+        
+//        int eredmeny = szam1 / szam2;
+        
+        lblFeladat.setText(szam1 + " / " + szam2);
+    }
+    
+    
+    
+    
+    
     /**
      * @param args the command line arguments
      */
